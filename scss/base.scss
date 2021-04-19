@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/font/Montserrat-Regular.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat bold";
+  src: url("/font/Montserrat-SemiBold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat italic";
+  src: url("/font/Montserrat-Italic.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat thin";
+  src: url("/font/Montserrat-Light.ttf") format("woff");
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr-primary);
+}
+
+* {
+  color: var(--clr-text);
+  font-family: var(--font-family);
+}
+
+ul,li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+p {
+  font-family: var(--font-thin);
+}
+
+h1 {
+  font-family: var(--font-bold);
+}
+
+.btn {
+  border: none;
+  padding: 0.65rem;
+  border-radius: 5px;
+  color: var(--clr-primary);
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 6rem;
+}
+
+.btn-markup {
+  background-color: var(--clr-markup);
+}
+
+.btn-markup:hover {
+  background-color: var(--clr-bigmarkup);
+}
+
+.btn-light {
+  border : 1px solid var(--clr-markup);
+  color: var(--clr-markup);
+  background-color: var(--clr-secondary);
+}
+
+.btn-light:hover {
+  background-color: var(--clr-markup);
+  color: var(--clr-primary);
+}
+
+.container {
+  background-color: var(--clr-secondary);
+  border-radius: 5px;
+  box-shadow: var(--shadow-main);
+}
+
+.form-container {
+  & {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  input {
+    background-color: var(--clr-primary);
+    border: none;
+    margin: auto;
+    border-radius: 5px;
+    padding: 0.7rem;
+    color: black;
+    width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+.footer {
+  & {
+    margin-top: 5rem;
+    background-color: black;
+    padding: 1rem;
+  }
+
+  * {
+    color: white;
+  }
+
+  .footer-header {
+    & {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+
+    p {
+      margin: 0 1rem;
+      font-size: 1.4rem;
+    }
+
+    .strong-word {
+      font-family: var(--font-bold);
+    }
+  }
+
+  .footer-container {
+    & {
+      width: 30vw;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      line-height: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p:last-child {
+      margin: 2rem 0 0 0; 
+      color: lightgray;
+      font-size: 0.9rem;
+    }
+
+    div {
+      & {
+        display: flex;
+        justify-content: center;
+      }      
+
+      img {
+        margin: 0 0.25rem;
+      }
+    }
+  }
+}
