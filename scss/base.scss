@@ -74,6 +74,14 @@ h1 {
   color: var(--clr-primary);
 }
 
+.btn-link {
+  background-color: none;
+  color: var(--clr-markup);
+  text-decoration: underline;
+  padding: 0;
+  width: auto;
+}
+
 .container {
   background-color: var(--clr-secondary);
   border-radius: 5px;

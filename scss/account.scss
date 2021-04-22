@@ -1,0 +1,44 @@
+#account-page {
+  & {
+    margin-top: 5rem;
+  }
+
+  #page-title {
+    margin-left: 23.5vw;
+  }
+  
+  .account-container {
+    & {
+      padding: 2rem;
+      padding-bottom: 1rem;
+      width: 50vw;
+      margin: 1rem auto;
+    }
+
+    p:first-child {
+      margin-top: 0;;
+    }
+
+    .actions {
+      & {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  #account-page {
+    .account-container {
+      .actions {
+        & {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
