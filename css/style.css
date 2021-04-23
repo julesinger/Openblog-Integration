@@ -157,6 +157,12 @@ h1 {
 .main-header .main-nav li {
   margin: 0 2rem;
 }
+.main-header .main-nav a {
+  transition: color 0.3s;
+}
+.main-header .main-nav a:hover {
+  color: var(--clr-markup);
+}
 
 @media all and (max-width: 1000px) {
   .main-header .top-bar .logo {
@@ -346,6 +352,7 @@ h1 {
   display: flex;
   justify-content: end;
   margin: 0;
+  text-align: center;
 }
 
 @media all and (max-width: 1600px) {
@@ -453,7 +460,8 @@ h1 {
 #about-page .about-container .about-actions .action p {
   margin-top: 0;
 }
-#about-page .about-container .about-actions .action button {
+#about-page .about-container .about-actions .action a {
+  display: block;
   margin: 0.5rem auto;
   width: 9rem;
   padding: 0.75rem;

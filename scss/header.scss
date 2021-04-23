@@ -65,6 +65,14 @@
     li {
       margin: 0 2rem;
     }
+
+    a {
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: var(--clr-markup)
+    }
   }
 }
 
