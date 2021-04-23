@@ -63,20 +63,11 @@
       margin : 3rem 0 1rem 0;
     }
 
-    #post-comment-link {
-      color: var(--clr-markup);
-      text-decoration: underline;
-    }
-
     .comments-wrapper {
       .comment-post {
         & {
           width: 90%;
           margin: auto;          
-        }
-
-        h2 {
-          margin-bottom: 2rem;
         }
 
         textarea {
@@ -92,8 +83,12 @@
         div {
           & {
             display: flex;
-            justify-content: flex-end;
             margin-top: 1rem;
+          }
+
+          button {
+            width: 100%;
+            text-align: center;
           }
         }
       }

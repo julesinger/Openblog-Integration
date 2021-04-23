@@ -288,16 +288,9 @@ h1 {
 #article-page .article-container #comment-title {
   margin: 3rem 0 1rem 0;
 }
-#article-page .article-container #post-comment-link {
-  color: var(--clr-markup);
-  text-decoration: underline;
-}
 #article-page .article-container .comments-wrapper .comment-post {
   width: 90%;
   margin: auto;
-}
-#article-page .article-container .comments-wrapper .comment-post h2 {
-  margin-bottom: 2rem;
 }
 #article-page .article-container .comments-wrapper .comment-post textarea {
   margin-top: 1rem;
@@ -310,8 +303,11 @@ h1 {
 }
 #article-page .article-container .comments-wrapper .comment-post div {
   display: flex;
-  justify-content: flex-end;
   margin-top: 1rem;
+}
+#article-page .article-container .comments-wrapper .comment-post div button {
+  width: 100%;
+  text-align: center;
 }
 
 .article-preview {
