@@ -5,6 +5,7 @@
   --clr-markup: #0067B8;
   --clr-bigmarkup: #00518F;
   --clr-text: #000000;
+  --clr-contrast: #fff;
   --font-family: "Montserrat";
   --font-bold: "Montserrat bold";
   --font-thin: "Montserrat thin";
@@ -624,6 +625,36 @@ h1 {
 }
 .comment .comment-infos {
   color: var(--clr-markup);
+}
+
+.paging {
+  background-color: var(--clr-secondary);
+  border-radius: 5px;
+  width: 15rem;
+  padding: 1rem;
+  margin: 3rem auto;
+  align-items: center;
+  box-shadow: var(--shadow-main);
+}
+.paging span {
+  width: 1.2rem;
+  margin: 0 0.5rem;
+}
+.paging span img {
+  width: 1rem;
+}
+.paging .page-number {
+  transition: color 0.3s;
+}
+.paging .page-number:hover {
+  color: var(--clr-bigmarkup);
+  cursor: pointer;
+}
+.paging .active {
+  color: var(--clr-contrast);
+  background-color: var(--clr-markup);
+  padding: 0.35rem 0.75rem;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

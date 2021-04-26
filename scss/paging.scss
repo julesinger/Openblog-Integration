@@ -1,0 +1,43 @@
+.paging {
+
+  & {
+    background-color: var(--clr-secondary);
+    border-radius: 5px;
+    width: 15rem;
+    padding: 1rem;
+    margin: 3rem auto;
+    align-items: center;
+    box-shadow: var(--shadow-main);
+  }
+
+  span {
+
+    & {
+      width: 1.2rem;
+      margin: 0 0.5rem;
+    }
+
+    img {
+      width: 1rem;
+    }
+  }
+
+  .page-number {
+    transition: color 0.3s;
+  }
+
+  .page-number:hover {
+    color: var(--clr-bigmarkup);
+    cursor: pointer;
+  }
+
+  .active {
+    & {
+      color: var(--clr-contrast);
+      background-color: var(--clr-markup);
+      padding: 0.35rem 0.75rem;
+      border-radius: 5px;
+    }
+  }
+ 
+}
