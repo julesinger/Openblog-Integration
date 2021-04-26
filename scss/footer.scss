@@ -2,7 +2,9 @@
   & {
     margin-top: 5rem;
     background-color: black;
-    padding: 1rem;
+    position: absolute;
+    right: 0;
+    left: 0;
   }
 
   * {
@@ -12,18 +14,33 @@
   .footer-header {
     & {
       display: flex;
-      justify-content: center;
-      flex-wrap: nowrap;
       overflow: hidden;
+      max-width: 100%;
+      position: absolute;
+      margin-bottom: 2rem;
     }
 
-    p {
-      margin: 0 1rem;
-      font-size: 1.4rem;
+    .footer-panel {
+      & {
+        margin-top: 1.25rem;
+        white-space: nowrap;
+        animation: scrollTxt 60s linear infinite;
+        font-size: 1.8rem;
+      }
+
+      span {
+        font-weight: bold;
+      }
     }
 
-    .strong-word {
-      font-family: var(--font-bold);
+    @keyframes scrollTxt {
+      0% {
+        transform: translate(0,0);
+      }
+
+      100% {
+        transform: translate(-100%,0);
+      }
     }
   }
 
@@ -36,6 +53,7 @@
     h2 {
       font-size: 2rem;
       text-align: center;
+      margin-top: 5rem;
     }
 
     p {
@@ -45,7 +63,7 @@
     }
 
     p:last-child {
-      margin: 2rem 0 0 0; 
+      margin: 2rem 0 0.5rem 0; 
       color: lightgray;
       font-size: 0.9rem;
     }
