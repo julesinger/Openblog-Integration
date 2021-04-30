@@ -380,6 +380,8 @@ h1 {
   margin: auto;
   margin-top: 5rem;
   border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s transform;
 }
 .article-preview img {
   width: 25rem;
@@ -415,6 +417,10 @@ h1 {
   text-align: center;
 }
 
+.article-preview:hover {
+  transform: translateY(-10px);
+}
+
 @media all and (max-width: 1600px) {
   .article-preview {
     width: 70vw;
@@ -429,14 +435,8 @@ h1 {
   .article-preview {
     width: 90vw;
   }
-}
-@media all and (max-width: 1200px) {
   .article-preview img {
     display: none;
-  }
-  .article-preview div .article-actions {
-    margin-top: 1rem;
-    justify-content: center;
   }
 }
 .footer {
