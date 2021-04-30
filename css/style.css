@@ -73,6 +73,7 @@ p {
 
 h1 {
   font-family: var(--font-bold);
+  font-size: 1.75rem;
 }
 
 .btn {
@@ -309,6 +310,17 @@ h1 {
 
 #article-page {
   margin: 5rem 0;
+}
+#article-page .article-flag {
+  background-color: var(--clr-secondary);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+#article-page .article-flag h1 {
+  text-align: center;
+}
+#article-page .article-flag #category {
+  color: var(--clr-markup);
 }
 #article-page .article-container {
   margin: auto;
