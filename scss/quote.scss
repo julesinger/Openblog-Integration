@@ -1,0 +1,39 @@
+#quotes-page {
+  & {
+    margin: 3rem 0;
+  }
+
+  .quote {
+    & {
+      padding: 1rem;
+      margin: auto;
+      margin-top: 3rem;
+      width: 30vw;
+    }
+
+    .quote-header {
+      & {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      button {
+        width: 6rem;
+        height: 2.5rem;
+        padding: 0;
+      }
+    }
+
+    .quote-container {
+
+      #quote-text {
+        text-align: justify;
+      }
+
+      #quote-author {
+        text-align: end;
+        font-weight: var(--font-family);
+      }
+    }
+  }
+}

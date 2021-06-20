@@ -1,11 +1,6 @@
 #participate-page {
   & {
-    margin-top: 5rem;
-  }
-
-  #page-title {
-    margin-left: 23.5vw;
-    font-family: var(--font-bold);
+    margin-top: 3rem;
   }
 
   .participate-container {
@@ -41,10 +36,6 @@
 @media all and (max-width: 1500px ) {
   #participate-page {
 
-    #page-title {
-      margin-left: 8vw;
-    }
-
     .participate-container {
       width: 80vw;
     }
@@ -53,10 +44,6 @@
 
 @media all and (max-width: 1000px ) {
   #participate-page {
-
-    #page-title {
-      margin-left: 5vw;
-    }
 
     .participate-container {
       width: 85vw;
@@ -68,11 +55,6 @@
   #participate-page {
     &  {
       margin-top: 2rem;
-    }
-
-    #page-title {
-      text-align: center;
-      margin: 0;
     }
 
     h2 {
